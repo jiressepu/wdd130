@@ -1,0 +1,67 @@
+/* Définition des variables CSS */
+:root {
+    --primary-color: #1E90FF;  /* Bleu */
+    --secondary-color: #FFD700; /* Jaune */
+    --text-color: #333333;      /* Gris foncé pour le texte */
+    --background-color: #f0f0f0; /* Couleur de fond */
+}
+
+/* Stylisation des titres */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Arial', sans-serif;
+    color: var(--primary-color);
+}
+
+/* Stylisation des paragraphes */
+p {
+    font-family: 'Georgia', serif;
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+/* Stylisation des titres spécifiques */
+h1 {
+    font-size: 2.5rem;
+}
+
+h2 {
+    font-size: 2rem;
+    color: var(--secondary-color);
+}
+
+/* Supprimer le soulignement des liens contenant des images */
+a img {
+    text-decoration: none;
+}
+
+.hero {
+    position: relative;  /* Le parent est positionné relativement */
+    width: 100%;         /* La largeur du conteneur prend toute la largeur disponible */
+    height: 500px;       /* Hauteur de la section héro (ajustez selon vos besoins) */
+    overflow: hidden;    /* S'assure que rien ne dépasse en dehors du conteneur */
+}
+
+/* Appliquer un style à l'image de fond dans la section Hero */
+.hero img {
+    width: 100%;           /* L'image occupe toute la largeur de son conteneur */
+    height: auto;          /* La hauteur de l'image est ajustée automatiquement pour garder son aspect */
+    display: block;        /* L'image est affichée comme un bloc pour éviter les espaces sous l'image */
+}
+
+/* Appliquer un style au titre (h1) et au texte (article) */
+.hero h1, .hero article {
+    position: absolute;       
+    top: 50%;                  
+    left: 50%;                
+    transform: translate(-50%, -50%);  /* Utiliser la méthode de transformation pour centrer exactement */
+    color: white;             /* Couleur du texte (utilisez la couleur qui contraste avec l'image) */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);  /* Ombre portée pour améliorer la lisibilité du texte */
+    text-align: center;       /* Centrer le texte */
+    margin: 0;                /* Enlever les marges par défaut */
+}
+
+/* Appliquer un style au texte dans l'article */
+.hero article {
+    font-size: 1.2rem;        
+    width: 80%;              
+        line-height: 1.5; }      
