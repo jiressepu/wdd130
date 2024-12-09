@@ -1,67 +1,342 @@
-/* Définition des variables CSS */
+/* Define color variables */
 :root {
-    --primary-color: #1E90FF;  /* Bleu */
-    --secondary-color: #FFD700; /* Jaune */
-    --text-color: #333333;      /* Gris foncé pour le texte */
-    --background-color: #f0f0f0; /* Couleur de fond */
+    --primary-color: #847c36; /* Blue */
+    --secondary-color: #dddad5; /* Orange */
+    --text-color: #f2ebeb;
+    --bg-color: #75616b; /* Background color for body */
+    --header-bg-color: #171414;
+    --footer-bg-color: #333;
+    --footer-text-color: #fff;
+    --highlight-color: #f39c12;
+    --border-radius: 8px;
 }
 
-/* Stylisation des titres */
-h1, h2, h3, h4, h5, h6 {
-    font-family: 'Arial', sans-serif;
-    color: var(--primary-color);
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-/* Stylisation des paragraphes */
-p {
-    font-family: 'Georgia', serif;
-    color: var(--text-color);
+/* Body and Typography */
+body {
+    font-family: 'Open Sans', sans-serif;
     line-height: 1.6;
+    background-color: var(--bg-color);
+    color: #333;
 }
 
-/* Stylisation des titres spécifiques */
-h1 {
-    font-size: 2.5rem;
+/* Headers */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Poppins', sans-serif;
 }
 
-h2 {
-    font-size: 2rem;
+/* Links */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Header Styles */
+header {
+    background-color: var(--header-bg-color);
+    color: var(--footer-text-color);
+    padding: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo img {
+    width: 150px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: var(--footer-text-color);
+    font-weight: bold;
+}
+
+nav ul li a:hover {
     color: var(--secondary-color);
 }
 
-/* Supprimer le soulignement des liens contenant des images */
-a img {
-    text-decoration: none;
-}
-
+/* Hero Section */
 .hero {
-    position: relative;  /* Le parent est positionné relativement */
-    width: 100%;         /* La largeur du conteneur prend toute la largeur disponible */
-    height: 500px;       /* Hauteur de la section héro (ajustez selon vos besoins) */
-    overflow: hidden;    /* S'assure que rien ne dépasse en dehors du conteneur */
+    position: relative;
+    background-image: url('hero-image.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
 }
 
-/* Appliquer un style à l'image de fond dans la section Hero */
-.hero img {
-    width: 100%;           /* L'image occupe toute la largeur de son conteneur */
-    height: auto;          /* La hauteur de l'image est ajustée automatiquement pour garder son aspect */
-    display: block;        /* L'image est affichée comme un bloc pour éviter les espaces sous l'image */
+.hero h1 {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: 'Poppins', sans-serif;
+    font-size: 3rem;
 }
 
-/* Appliquer un style au titre (h1) et au texte (article) */
-.hero h1, .hero article {
-    position: absolute;       
-    top: 50%;                  
-    left: 50%;                
-    transform: translate(-50%, -50%);  /* Utiliser la méthode de transformation pour centrer exactement */
-    color: white;             /* Couleur du texte (utilisez la couleur qui contraste avec l'image) */
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);  /* Ombre portée pour améliorer la lisibilité du texte */
-    text-align: center;       /* Centrer le texte */
-    margin: 0;                /* Enlever les marges par défaut */
-}
-
-/* Appliquer un style au texte dans l'article */
 .hero article {
-    font-size: 1.2rem;        
-    width: 80%;              
-        line-height: 1.5; }      
+    position: absolute;
+    top: 58%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: left;
+    width: 100%;
+    max-width: 600px;
+}
+
+.hero img {
+    float: right;
+    margin-left: 20px;
+    width: 250px;
+    height: auto;
+}
+
+/* Adventure Section */
+.adventure {
+    padding: 5px 20px;
+    background-color: #271b1b;
+}
+
+.adventure h2 {
+    font-size: 2rem;
+    color: var(--primary-color);
+}
+
+.adventure-images {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 20px;
+}
+
+.adventure-images figure {
+    width: 18%;
+    margin: 0;
+    text-align: center;
+}
+
+.adventure-images img {
+    width: 100%;
+    height: auto;
+    border-radius: var(--border-radius);
+    box-shadow: 0 4px 8px rgba(209, 203, 203, 0.1);
+}
+
+.adventure-images figcaption {
+    margin-top: 10px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #fbfbfb;
+    padding: 5px;
+    border-radius: 5px;
+    width: 100%;
+    text-align: center;
+}
+
+/* Footer Section */
+footer {
+    background-color: var(--footer-bg-color);
+    color: var(--footer-text-color);
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+footer p {
+    font-size: 1rem;
+}
+
+footer .social-links {
+    margin-top: 10px;
+}
+
+footer .social-links a {
+    margin-right: 15px;
+}
+
+footer .social-links img {
+    width: 30px;
+    height: 30px;
+    transition: opacity 0.3s;
+}
+
+footer .social-links img:hover {
+    opacity: 0.7;
+}
+
+/* Contact Info Section */
+.contact-info {
+    text-align: left;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: var(--border-radius);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+}
+
+.contact-info address {
+    margin-bottom: 20px;
+}
+
+.contact-info p {
+    font-size: 1rem;
+    color: #555;
+}
+
+.contact-info .google-map {
+    margin-top: 20px;
+    height: 200px;
+    background-color: #eee;
+}
+
+/* Employee Profiles */
+.employee-profiles {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 40px;
+}
+
+.employee-profiles div {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: var(--border-radius);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 30%;
+    text-align: center;
+}
+
+.employee-profiles img {
+    width: 100%;
+    border-radius: 50%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.employee-profiles h3 {
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
+
+.employee-profiles p {
+    color: #777;
+}
+
+/* Contact Form Section */
+.contact-form {
+    margin-top: 40px;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: var(--border-radius);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form label {
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+    width: 100%;
+}
+
+.contact-form textarea {
+    height: 150px;
+}
+
+.contact-form fieldset {
+    border: none;
+    margin-bottom: 20px;
+}
+
+.contact-form legend {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.contact-form input[type="radio"] {
+    margin-right: 10px;
+}
+
+.contact-form button {
+    padding: 12px;
+    background-color: var(--highlight-color);
+    border: none;
+    color: white;
+    font-size: 1.1rem;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.contact-form button:hover {
+    background-color: #e67e22;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .employee-profiles {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .employee-profiles div {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+
+    .contact-form {
+        padding: 20px;
+    }
+
+    .contact-info {
+        padding: 15px;
+    }
+}
+
+
+
+
+/* Global text color */
+body {
+    color: black; /* Définit la couleur du texte principale en noir */
+}
+
+/* Specific sections where the text should be black */
+label, p, .purpose-of-message, .your-message {
+    color: black; /* Applique la couleur noire à ces éléments */
+}
+
+input, textarea {
+    color: black; /* S'assure que le texte saisi dans les champs de formulaire soit aussi en noir */
+}
