@@ -519,3 +519,25 @@ color: #030000;
     font-size: 2;
     color: #4707db;
 }
+
+.cta h2{
+    font-size: 24;
+    color: #070114;
+    height: auto;
+    padding: 10px;
+    text-align: center;
+}
+.cta p{
+    font-size: 24;
+    color: #04010c;
+    height: auto;
+    padding: 18px;
+    text-align: center;
+}
+.act a {
+    font-size: 24;
+    color: #0c0107;
+    height: auto;
+    padding: 18px;
+    text-align: center;
+}
