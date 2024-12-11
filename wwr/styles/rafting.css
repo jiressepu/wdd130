@@ -1,13 +1,13 @@
 /* Define color variables */
 :root {
-    --primary-color: #847c36; /* Blue */
+    --primary-color: #f8f8f3; /* Blue */
     --secondary-color: #dddad5; /* Orange */
-    --text-color: #f2ebeb;
-    --bg-color: #75616b; /* Background color for body */
-    --header-bg-color: #171414;
-    --footer-bg-color: #333;
+    --text-color: #f1eded;
+    --bg-color: #f5eaf0; /* Background color for body */
+    --header-bg-color: #f7f0f0;
+    --footer-bg-color: #f1eaea;
     --footer-text-color: #fff;
-    --highlight-color: #f39c12;
+    --highlight-color: #e9e3d9;
     --border-radius: 8px;
 }
 
@@ -23,7 +23,7 @@ body {
     font-family: 'Open Sans', sans-serif;
     line-height: 1.6;
     background-color: var(--bg-color);
-    color: #333;
+    color: #240606;
 }
 
 /* Headers */
@@ -110,7 +110,7 @@ nav ul li a:hover {
 /* Adventure Section */
 .adventure {
     padding: 5px 20px;
-    background-color: #271b1b;
+    background-color: #e7e0e0;
 }
 
 .adventure h2 {
@@ -135,14 +135,21 @@ nav ul li a:hover {
     width: 100%;
     height: auto;
     border-radius: var(--border-radius);
-    box-shadow: 0 4px 8px rgba(243, 235, 235, 0.1);
+    box-shadow: 0 4px 8px rgba(230, 226, 226, 0.1);
 }
+ 
+.adventure h2 {
+    font-size: 2rem;
+    color: #000; 
+}
+ 
+
 
 .adventure-images figcaption {
     margin-top: 10px;
     font-size: 1rem;
     font-weight: bold;
-    color: #fbfbfb;
+    color: #290202;
     padding: 5px;
     border-radius: 5px;
     width: 100%;
@@ -185,9 +192,9 @@ footer .social-links img:hover {
     text-align: left;
     margin: 20px auto;
     padding: 10px;
-    background-color: #f0ebeb;
+    background-color: #f5f2f2;
     border-radius: var(--border-radius);
-    box-shadow: 0 4px 8px rgba(36, 2, 2, 0.1);
+    box-shadow: 0 4px 8px rgba(17, 1, 1, 0.1);
     max-width: 800px;
 }
 
@@ -197,13 +204,13 @@ footer .social-links img:hover {
 
 .contact-info p {
     font-size: 1rem;
-    color: #0e0000;
+    color: #330606;
 }
 
 .contact-info .google-map {
     margin-top: 20px;
     height: 200px;
-    background-color: #1b0b0b;
+    background-color: #eeeaea;
 }
 .employee-profiles {
     display: flex;
@@ -225,7 +232,7 @@ body {
 }
 
 header {
-    background-color: #161414;
+    background-color: #ebe5e5;
     padding: 20px;
 }
 
@@ -242,19 +249,6 @@ header {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 * {
     margin: 0;
     padding: 0;
@@ -264,8 +258,8 @@ header {
 /* Body styles */
 body {
     font-family: 'Open Sans', sans-serif;
-    background-color: #f4f4f4;
-    color: #333;
+    background-color: #e6e3e3;
+    color: #0f0101;
     line-height: 1.6;
 }
 
@@ -294,15 +288,15 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #fff;
+    color: #f5f1f1;
     text-decoration: none;
     padding: 10px 20px;
     transition: background-color 0.3s;
 }
 
 nav ul li a:hover {
-    background-color: #fff;
-    color: #004c3f;
+    background-color: #bbb4b4;
+    color: hsl(171, 75%, 19%);
 }
 
 /* Main Content Styles */
@@ -319,19 +313,19 @@ main {
 
 .trip-introduction h1 {
     font-size: 36px;
-    color: #004c3f;
+    color: hsl(180, 100%, 3%);
     margin-bottom: 10px;
 }
 
 .trip-introduction p {
     font-size: 18px;
-    color: #555;
+    color: #030000;
     margin-bottom: 20px;
 }
 
 .cta-button {
-    background-color: #004c3f;
-    color: #fff;
+    background-color: #aa638c;
+    color: #eeedf0;
     text-decoration: none;
     padding: 15px 30px;
     border-radius: 5px;
@@ -340,7 +334,7 @@ main {
 }
 
 .cta-button:hover {
-    background-color: #009688;
+    background-color: #f0f0ea;
 }
 
 /* Trips Section */
@@ -349,17 +343,18 @@ main {
     gap: 30px;
     flex-wrap: wrap;
     justify-content: center;
-    margin-bottom: 40px;
+    margin-bottom: 40px
 }
 
 .trip {
-    background-color: #fff;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    background-color: #f8f6f6;
+    box-shadow: 0 4px 10px rgba(240, 234, 234, 0.1);
     width: 300px;
     margin-bottom: 30px;
     border-radius: 10px;
     overflow: hidden;
     text-align: center;
+    color: #004c3f;
 }
 
 .trip img {
@@ -370,21 +365,21 @@ main {
 
 .trip h2 {
     font-size: 24px;
-    color: #004c3f;
+    color: #531ad8;
     padding: 20px 10px;
 }
 
 .trip p {
     font-size: 16px;
     padding: 0 20px 20px;
-    color: #666;
+    color: #080000;
 }
 
 /* Trips Table Styles */
 .trips-table {
-    background-color: #fff;
+    background-color: #ebe6e6;
     padding: 20px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 10px rgba(223, 61, 61, 0.1);
     border-radius: 10px;
     margin-bottom: 40px;
 }
@@ -405,16 +400,17 @@ table th, table td {
     padding: 12px;
     text-align: left;
     font-size: 16px;
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid #d34242;
+    color:rgb(46, 4, 4);
 }
 
 table th {
-    background-color: #004c3f;
-    color: #fff;
+    background-color: #f1f5f4;
+    color: #f8f6f6;
 }
 
 table tr:hover {
-    background-color: #f4f4f4;
+    background-color: #f0eaea;
 }
 
 /* Wireframe Link Section */
@@ -435,8 +431,8 @@ table tr:hover {
 
 /* Footer Styles */
 footer {
-    background-color: #004c3f;
-    color: #fff;
+    background-color: #ecf0ef;
+    color: #070000;
     padding: 40px 20px;
     text-align: center;
 }
@@ -486,4 +482,40 @@ footer .social-links img:hover {
 footer p {
     font-size: 16px;
     margin-top: 20px;
+}
+
+
+.hero-image {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    height: auto; 
+}
+.hero h1{
+    font-size: 24px;
+    color: #000; 
+}
+.hero p{
+font-size: px;
+color: #030000;
+}
+
+.hero-text h1{
+    font-size: 24px;
+    color: #030002;
+    height: auto;
+    padding: 0px;
+}
+.hero-text p{
+    font-size: 18px;
+    padding: 80px;
+}
+.newsletter h2{
+    font-size: 24;
+    color: #4707db;
+    text-align: center;
+}
+.form .input type {
+    font-size: 2;
+    color: #4707db;
 }
