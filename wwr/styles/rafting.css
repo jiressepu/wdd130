@@ -72,7 +72,7 @@ nav ul li a:hover {
 /* Hero Section */
 .hero {
     position: relative;
-    background-image: url('hero-image.jpg');
+   
     background-size: cover;
     background-position: center;
     height: 300px;
@@ -81,14 +81,6 @@ nav ul li a:hover {
     padding: 50px 20px;
 }
 
-.hero h1 {
-    position: absolute;
-    top: 20%;
-    left: 50%;
-    transform: translateX(-50%);
-    font-family: 'Poppins', sans-serif;
-    font-size: 3rem;
-}
 
 .hero article {
     position: absolute;
@@ -100,12 +92,6 @@ nav ul li a:hover {
     max-width: 600px;
 }
 
-.hero img {
-    float: right;
-    margin-left: 20px;
-    width: 250px;
-    height: auto;
-}
 
 /* Adventure Section */
 .adventure {
@@ -484,13 +470,6 @@ footer p {
     margin-top: 20px;
 }
 
-
-.hero-image {
-    width: 100%;
-    height: 400px;
-    object-fit: cover;
-    height: auto; 
-}
 .hero h1{
     font-size: 24px;
     color: #000; 
@@ -529,15 +508,114 @@ color: #030000;
 }
 .cta p{
     font-size: 24;
-    color: #04010c;
+    color: #e20736;
     height: auto;
     padding: 18px;
     text-align: center;
 }
-.act a {
-    font-size: 24;
-    color: #0c0107;
-    height: auto;
-    padding: 18px;
-    text-align: center;
+
+.cta {
+    background-color: #f8f4f4; /* Couleur de fond */
+    text-align: center; /* Centrer le texte */
+    padding: 50px 20px; /* Espacement intérieur */
+    border-radius: 8px; /* Coins arrondis */
+    box-shadow: 0 4px 8px rgba(233, 227, 227, 0.1); /* Ombre subtile */
+    margin: 30px 0; /* Espacement autour de la section */
+}
+form {
+    max-width: 400px; /* Largeur maximale du formulaire */
+    margin: 0 auto; /* Centrer le formulaire horizontalement */
+    padding: 20px; /* Espacement intérieur */
+    background-color: #fff; /* Fond blanc */
+    border-radius: 8px; /* Coins arrondis */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombre subtile */
+}
+
+/* Style pour les labels */
+form label {
+    display: block; /* Faire en sorte que le label soit sur une nouvelle ligne */
+    margin-bottom: 8px; /* Espacement sous les labels */
+    font-size: 1.1em; /* Taille de la police */
+    color: #333; /* Couleur du texte */
+}
+
+/* Style pour les champs de saisie */
+form input[type="text"],
+form input[type="email"] {
+    width: 100%; /* Champs de saisie prennent toute la largeur disponible */
+    padding: 12px; /* Espacement intérieur */
+    margin-bottom: 20px; /* Espacement sous chaque champ */
+    border: 1px solid #ddd; /* Bordure grise claire */
+    border-radius: 5px; /* Coins arrondis */
+    font-size: 1em; /* Taille de la police */
+}
+
+/* Style pour le bouton de soumission */
+form button {
+    width: 100%; /* Le bouton prend toute la largeur */
+    padding: 12px; /* Espacement intérieur */
+    background-color: #007BFF; /* Couleur du bouton */
+    color: white; /* Couleur du texte du bouton */
+    border: none; /* Enlever la bordure par défaut */
+    border-radius: 5px; /* Coins arrondis */
+    font-size: 1.2em; /* Taille de la police */
+    cursor: pointer; /* Changer le curseur pour une main au survol */
+    transition: background-color 0.3s ease; /* Transition de couleur au survol */
+}
+
+/* Effet de survol pour le bouton */
+form button:hover {
+    background-color: #0056b3; /* Changer la couleur du bouton au survol */
+}
+
+/* Style pour les champs de saisie invalides */
+form input:invalid {
+    border-color: #e74c3c; /* Bordure rouge pour les champs invalides */
+}
+
+form input:valid {
+    border-color: #2ecc71; 
+}
+
+.hero {
+    position: relative; /* Nécessaire pour positionner le texte à l'intérieur de l'image */
+    width: 100%; /* Largeur de la section */
+    height: 100vh; /* Hauteur de la section égale à la hauteur de la fenêtre */
+    overflow: hidden;   
+}
+.hero-image {
+    position: absolute; /* Positionner l'image par rapport à la section */
+    top: 0;
+    left: 0;
+    width: 100%; /* L'image occupe toute la largeur */
+    height: 100%; /* L'image occupe toute la hauteur */
+    object-fit: cover; /* L'image couvre toute la zone sans déformation */
+    z-index: -1; /* Placer l'image derrière le texte */
+}
+.hero-text {
+    position: absolute; /* Positionner le texte par rapport à la section */
+    top: 50%; /* Placer le texte au centre verticalement */
+    left: 50%; /* Placer le texte au centre horizontalement */
+    transform: translate(-50%, -50%); /* Centrer parfaitement le texte */
+    text-align: center; /* Centrer le texte */
+    color: white; /* Couleur du texte */
+    padding: 0 20px; /* Espacement autour du texte */
+    z-index: 1; /* Assurer que le texte soit au-dessus de l'image */
+}
+
+/* Style pour le titre h1 */
+.hero-text h1 {
+    font-size: 3em; /* Taille du titre */
+    margin-bottom: 20px; /* Espacement sous le titre */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+    padding: 24px;
+}
+
+/* Style pour le texte du paragraphe */
+.hero-text p {
+    font-size: 1.2em; /* Taille du texte */
+    line-height: 1.6; /* Espacement entre les lignes */
+    max-width: 800px; /* Largeur maximale du texte */
+    margin: 0 auto; /* Centrer le texte */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3); /* Ombre pour améliorer la lisibilité */
 }
