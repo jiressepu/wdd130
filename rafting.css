@@ -874,38 +874,3 @@ footer .social-links img {
         flex-direction: column;
     }
 }
-
-
-.cta-button {
-    display: inline-block;
-    background-color: #FF7F50; /* Couleur vive (orange corail) pour attirer l'attention */
-    color: white;
-    font-size: 18px;
-    font-weight: bold;
-    padding: 15px 30px;
-    border-radius: 5px;
-    text-align: center;
-    text-decoration: none;
-    transition: background-color 0.3s, transform 0.3s;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-/* Effet au survol (hover) */
-.cta-button:hover {
-    background-color: #FF5722; /* Couleur légèrement plus foncée au survol */
-    transform: scale(1.05); /* Légère augmentation de la taille */
-}
-
-/* Effet focus (quand l'élément reçoit le focus) */
-.cta-button:focus {
-    outline: none;
-    box-shadow: 0 0 0 3px rgba(255, 87, 34, 0.6); /* Accent sur le bouton lors du focus */
-}
-
-/* Responsivité pour les écrans plus petits */
-@media (max-width: 768px) {
-    .cta-button {
-        font-size: 16px;
-        padding: 12px 24px;
-    }
-}
