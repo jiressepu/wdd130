@@ -372,7 +372,7 @@ main {
 
 .trips-table h2 {
     font-size: 28px;
-    color: #004c3f;
+    color: #241501;
     margin-bottom: 20px;
     text-align: center;
 }
@@ -387,12 +387,12 @@ table th, table td {
     text-align: left;
     font-size: 16px;
     border-bottom: 1px solid #d34242;
-    color:rgb(46, 4, 4);
+    color:rgb(29, 1, 1);
 }
 
 table th {
     background-color: #f1f5f4;
-    color: #f8f6f6;
+    color: #0c0000;
 }
 
 table tr:hover {
@@ -433,6 +433,7 @@ footer .employee-profiles {
     justify-content: center;
     gap: 30px;
     margin-bottom: 40px;
+    color: #030002;
 }
 
 footer .employee {
